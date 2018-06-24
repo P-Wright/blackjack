@@ -32,8 +32,6 @@ private:
     Suit cardSuit;
 
 public:
-
-    
     Card(Card::Rank rank = RANK_2, Card::Suit suit = SUIT_HEART) 
         : cardRank(rank), cardSuit(suit)
     {

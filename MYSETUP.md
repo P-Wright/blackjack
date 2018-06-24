@@ -17,3 +17,4 @@
 - if you are creating an enum, do you need to test creating a variable with every possible value of the enum?
 - is it ok to have more than one assert in a test
 - what is the right naming convension for tests?
+- is it best practice to have one test file per class?

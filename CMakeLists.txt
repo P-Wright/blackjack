@@ -3,7 +3,7 @@ project(BlackJack)
 
 set(BLACK_JACK_VERSION_MAJOR 1)
 set(BLACK_JACK_VERSION_MINOR 0)
-set(SOURCES ${PROJECT_SOURCE_DIR}/src/BlackJack.cpp)
+set(SOURCES ${PROJECT_SOURCE_DIR}/src/Card.cpp)
 set(CMAKE_BINARY_DIR ${PROJECT_SOURCE_DIR}/build)
 
 include_directories("${PROJECT_SOURCE_DIR}/include")

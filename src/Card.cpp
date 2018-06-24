@@ -1,4 +1,4 @@
-#include "BlackJack.hpp"
+#include "Card.hpp"
 
 std::string Card::printCard() const {
     std::string output("");
