@@ -1,0 +1,4 @@
+# Ignore CI build directory
+**/build
+/*.a
+/*.o
