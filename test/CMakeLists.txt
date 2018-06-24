@@ -33,8 +33,14 @@
 #           2. Generate Step:  write out makefiles that will build the project
 #
 #    When I ran this is built the test_main executable in /build/test rather than /build, why?
-#    
-
+#      From the add_executable docs:
+#      "By default the executable file will be created in the build tree directory corresponding to the source tree directory
+#      in which the command was invoked. See documentation of the RUNTIME_OUTPUT_DIRECTORY target property to change this location.""
+#      So in this caase we set the CMAKE_BUILD_DIR to the /build in the root CMAKE file and then
+#      using the add_subdirectory command in the root file we didn't specifiy a build directory so it looks like
+#      it just by defaulted mirrored this to the /build/test dir.  I probably could have over-ridden this
+#      by specifying the build dir command to the subdir 
+#      
 
 include_directories("${PROJECT_SOURCE_DIR}/include" "${PROJECT_SOURCE_DIR}/gtest/googletest/include")
 
