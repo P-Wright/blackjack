@@ -33,11 +33,13 @@ private:
 
 public:
 
-    Card(Card::Rank rank, Card::Suit suit) {
-        cardRank = rank;
-        cardSuit = suit;
+    
+    Card(Card::Rank rank = RANK_2, Card::Suit suit = SUIT_HEART) 
+        : cardRank(rank), cardSuit(suit)
+    {
     }
 
     std::string printCard() const;
+    int getCardValue() const;
 
 };

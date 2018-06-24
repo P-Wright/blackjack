@@ -71,3 +71,55 @@ std::string Card::printCard() const {
     return output;
 
 }
+
+int Card::getCardValue() const {
+    switch (cardRank) {
+        case RANK_2:
+            return 2;
+        break;
+
+        case RANK_3:
+            return 3;
+        break;
+        
+        case RANK_4:
+            return 4;
+        break;
+        
+        case RANK_5:
+            return 5;
+        break;
+        
+        case RANK_6:
+            return 6;
+        break;
+        
+        case RANK_7:
+            return 7;
+        break;
+        
+        case RANK_8:
+            return 8;
+        break;
+        
+        case RANK_9:
+            return 9;
+        break;
+        
+        case RANK_JACK:
+            return 10;
+        break;
+
+        case RANK_QUEEN:
+            return 10;
+        break;
+        
+        case RANK_KING:
+            return 10;
+        break;
+        
+        case RANK_ACE:
+            return 11;
+        break;
+    }
+}

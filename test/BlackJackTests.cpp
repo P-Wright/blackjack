@@ -4,140 +4,99 @@
 namespace {
  
     TEST(BlackJack, CardQHCreateTest) {
-        std::string output;
         const Card card(Card::RANK_QUEEN, Card::SUIT_HEART);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "QH");
+        ASSERT_EQ(card.printCard(), "QH");
+        ASSERT_EQ(card.getCardValue(), 10);
+
     }
 
     TEST(BlackJack, CardQCCreateTest) {
-        std::string output;
         const Card card(Card::RANK_QUEEN, Card::SUIT_CLUB);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "QC");
+        ASSERT_EQ(card.printCard(), "QC");
     }
 
     TEST(BlackJack, CardQDCreateTest) {
-        std::string output;
         const Card card(Card::RANK_QUEEN, Card::SUIT_DIAMOND);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "QD");
+        ASSERT_EQ(card.printCard(), "QD");
     }
 
     TEST(BlackJack, CardQSCreateTest) {
-        std::string output;
         const Card card(Card::RANK_QUEEN, Card::SUIT_SPADE);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "QS");
+        ASSERT_EQ(card.printCard(), "QS");
     }
 
     TEST(BlackJack, Card2CCreateTest) {
-        std::string output;
         const Card card(Card::RANK_2, Card::SUIT_CLUB);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "2C");
+        ASSERT_EQ(card.printCard(), "2C");
+        ASSERT_EQ(card.getCardValue(), 2);
     }
 
     TEST(BlackJack, Card3CCreateTest) {
-        std::string output;
         const Card card(Card::RANK_3, Card::SUIT_CLUB);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "3C");
+        ASSERT_EQ(card.printCard(), "3C");
+        ASSERT_EQ(card.getCardValue(), 3);
     }
 
     TEST(BlackJack, Card4CCreateTest) {
-        std::string output;
         const Card card(Card::RANK_4, Card::SUIT_CLUB);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "4C");
+        ASSERT_EQ(card.printCard(), "4C");
+        ASSERT_EQ(card.getCardValue(), 4);
     }
 
 
     TEST(BlackJack, Card5CCreateTest) {
-        std::string output;
         const Card card(Card::RANK_5, Card::SUIT_CLUB);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "5C");
+        ASSERT_EQ(card.printCard(), "5C");
+        ASSERT_EQ(card.getCardValue(), 5);
     }
 
     TEST(BlackJack, Card6CCreateTest) {
-        std::string output;
         const Card card(Card::RANK_6, Card::SUIT_CLUB);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "6C");
+        ASSERT_EQ(card.printCard(), "6C");
+        ASSERT_EQ(card.getCardValue(), 6);
     }
 
     TEST(BlackJack, Card7CCreateTest) {
-        std::string output;
         const Card card(Card::RANK_7, Card::SUIT_CLUB);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "7C");
+        ASSERT_EQ(card.printCard(), "7C");
+        ASSERT_EQ(card.getCardValue(), 7);
     }
 
     TEST(BlackJack, Card8CCreateTest) {
-        std::string output;
         const Card card(Card::RANK_8, Card::SUIT_CLUB);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "8C");
+        ASSERT_EQ(card.printCard(), "8C");
+        ASSERT_EQ(card.getCardValue(), 8);
     }
 
     TEST(BlackJack, Card9CCreateTest) {
-        std::string output;
         const Card card(Card::RANK_9, Card::SUIT_CLUB);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "9C");
+        ASSERT_EQ(card.printCard(), "9C");
+        ASSERT_EQ(card.getCardValue(), 9);
     }
 
     TEST(BlackJack, CardJCCreateTest) {
-        std::string output;
         const Card card(Card::RANK_JACK, Card::SUIT_CLUB);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "JC");
+        ASSERT_EQ(card.printCard(), "JC");
+        ASSERT_EQ(card.getCardValue(), 10);
     }
 
     TEST(BlackJack, CardKCCreateTest) {
-        std::string output;
         const Card card(Card::RANK_KING, Card::SUIT_CLUB);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "KC");
+        ASSERT_EQ(card.printCard(), "KC");
+        ASSERT_EQ(card.getCardValue(), 10);
     }
 
     TEST(BlackJack, CardACCreateTest) {
-        std::string output;
         const Card card(Card::RANK_ACE, Card::SUIT_CLUB);
-        
-        output = card.printCard();
-        
-        ASSERT_EQ(output, "AC");
+        ASSERT_EQ(card.printCard(), "AC");
+        ASSERT_EQ(card.getCardValue(), 11);
     }
 
+
+   TEST(BlackJack, DefaultCardCreateTest) {
+        Card card;
+        ASSERT_EQ(card.printCard(), "2H");
+        ASSERT_EQ(card.getCardValue(), 2);
+    }
 
 }
