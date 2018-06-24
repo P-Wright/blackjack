@@ -10,3 +10,8 @@
     - F7 build
 - https://code.visualstudio.com/docs/languages/cpp - used this one to setup build steps
 - 
+
+
+#open questions
+- should you but all the include files a .cpp needs in its .h file?
+- if you are creating an enum, do you need to test creating a variable with every possible value of the enum?
