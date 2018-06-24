@@ -1,13 +1,13 @@
 cmake_minimum_required (VERSION 3.5)
-project(QuickStart)
+project(BlackJack)
 
-set(QUICK_START_VERSION_MAJOR 1)
-set(QUICK_START_VERSION_MINOR 0)
-set(SOURCES ${PROJECT_SOURCE_DIR}/src/QuickStart.cpp)
+set(BLACK_JACK_VERSION_MAJOR 1)
+set(BLACK_JACK_VERSION_MINOR 0)
+set(SOURCES ${PROJECT_SOURCE_DIR}/src/BlackJack.cpp)
 set(CMAKE_BINARY_DIR ${PROJECT_SOURCE_DIR}/build)
 
 include_directories("${PROJECT_SOURCE_DIR}/include")
-add_library(QuickStart STATIC ${SOURCES})
+add_library(BlackJack STATIC ${SOURCES})
 enable_testing()
 
 

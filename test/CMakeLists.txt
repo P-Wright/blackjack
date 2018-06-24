@@ -44,14 +44,14 @@
 
 include_directories("${PROJECT_SOURCE_DIR}/include" "${PROJECT_SOURCE_DIR}/gtest/googletest/include")
 
-set(TEST_SOURCES ${PROJECT_SOURCE_DIR}/test/QuickStartTest.cpp)
+set(TEST_SOURCES ${PROJECT_SOURCE_DIR}/test/BlackJackTests.cpp)
 
 #QuickStart is created by add_library(QuickStart STATIC ${SOURCES} in the root CMakeLists.txt file
 #gtest_main is added as part of the google test CMAKE files
-set(TEST_LIBS QuickStart gtest_main)
+set(TEST_LIBS BlackJack gtest_main)
 
 add_executable(test_main ${TEST_SOURCES})
 target_link_libraries(test_main ${TEST_LIBS})
 
 #add a test to be run by ctest - command is the exectuable to be called
-add_test(NAME QuickStartTest COMMAND test_main)
+add_test(NAME BlackJackTests COMMAND test_main)
