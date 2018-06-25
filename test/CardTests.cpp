@@ -1,6 +1,7 @@
 #include "Card.hpp"
 #include "gtest/gtest.h"
 
+
 namespace {
  
     TEST(Card, CardQHCreateTest) {
@@ -73,6 +74,14 @@ namespace {
         ASSERT_EQ(card.printCard(), "9C");
         ASSERT_EQ(card.getCardValue(), 9);
     }
+
+    TEST(Card, Card10CCreateTest) {
+        const Card card(Card::RANK_10, Card::SUIT_CLUB);
+        ASSERT_EQ(card.printCard(), "TC");
+        ASSERT_EQ(card.getCardValue(), 10);
+    }
+
+
 
     TEST(Card, CardJCCreateTest) {
         const Card card(Card::RANK_JACK, Card::SUIT_CLUB);

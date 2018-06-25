@@ -16,14 +16,16 @@ public:
         RANK_JACK,
         RANK_QUEEN,
         RANK_KING,
-        RANK_ACE
+        RANK_ACE,
+        MAX_RANK
     };
 
     enum Suit {
         SUIT_HEART,
         SUIT_CLUB,
         SUIT_DIAMOND,
-        SUIT_SPADE
+        SUIT_SPADE,
+        MAX_SUIT
     };
 
 

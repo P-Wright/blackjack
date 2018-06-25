@@ -31,6 +31,9 @@ std::string Card::printCard() const {
             output += "9";
             break;
 
+        case RANK_10: 
+            output += "T";
+            break;
         case RANK_JACK: 
             output += "J";
             break;
@@ -44,6 +47,9 @@ std::string Card::printCard() const {
        
         case RANK_ACE: 
             output += "A";
+            break;
+        
+        default:
             break;
  
  
@@ -106,6 +112,10 @@ int Card::getCardValue() const {
             return 9;
         break;
         
+        case RANK_10:
+            return 10;
+        break;
+
         case RANK_JACK:
             return 10;
         break;
